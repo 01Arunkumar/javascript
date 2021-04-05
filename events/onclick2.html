@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>events</title>
+
+    </head>
+    <body>
+      <form>
+          <label>write user name:</label>
+          <input type="text" value=" first name" onmousedown="colour()" id="bgcolour"/><br><br>
+
+          <button onclick="myfunction()" id="pr1">click here</button> <br><br>
+          <hr>
+
+          <label>heighest qualification:</label>
+          <select id="cl1" onclick="show()">
+              <option>B.E/B.TECH</option>
+              <option>MBBS</option>
+              <option>MSC</option>
+              <option>B.COM</option>
+          </select><br><br>
+          <p id="cl1">qualification</p>
+         
+
+        
+      </form>
+    </body>
+
+    <script lang="javascript" type="text/javascript">
+    function myfunction(){
+        document.getElementById("pr1").innerHTML=alert("hello there! iam java script");
+          }
+    function colour(){
+        document.getElementById("bgcolour").style.backgroundColor="yellow";
+    }
+    function show(){
+        var value= document.getElementById("cl1").value; 
+        if(value== "MBBS"){
+            alert("u choiced good career option");
+        }
+    }
+
+    </script>
+
+</html>

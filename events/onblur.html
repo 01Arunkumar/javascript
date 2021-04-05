@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>events</title>
+    </head>
+    <body>
+        <h1>onblur event handler</h1>
+        
+        <label>enter ur fname:</label>
+        <input type="text" onblur="blurevent()" id="case"/>
+        <p id="case"></p>
+    </body>
+
+    <script>
+        function blurevent() {
+            let x=document.getElementById("case");
+            x.value=x.value.toUpperCase();
+            
+        }
+        
+        
+    </script>
+</html>
+
