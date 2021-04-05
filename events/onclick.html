@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>javascript Event</title>
+
+    </head>
+    <body>
+        <h1>creating a button and giving some event</h1>
+        <button ondblclick=greeting() >click me</button>
+        <p id="demo"></p>
+        <input type="text" onblur=caseChange() id="entry"/>
+    </body>
+    <script>
+        var date=new Date();
+      
+       var hours= date.getHours();
+        function greeting(){
+            if (hours<12){
+                document.getElementById("demo").innerHTML="gud morning";
+            }
+            else (document.getElementById("demo").innerHTML="gud afternoon");
+        }
+        function caseChange(){
+             var x=document.getElementById("entry");
+             x.value=x.value.toUpperCase();
+        }
+            
+    </script>
+</html>
